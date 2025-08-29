@@ -1,0 +1,39 @@
+[tool.poetry]
+name = "jupyter-stata-environment"
+version = "1.0.0"
+description = "Jupyter Lab environment with Stata kernel and NBGrader support"
+authors = ["Caspar David Peter <peter@rsm.nl>"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.9"
+jupyterlab = "^4.0.0"
+nbgrader = "^0.9.1"
+nbstata = "^0.8.1"
+ipykernel = "^6.25.0"
+pandas = "^2.0.0"
+numpy = "^1.24.0"
+matplotlib = "^3.7.0"
+seaborn = "^0.12.0"
+scipy = "^1.11.0"
+statsmodels = "^0.14.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.0"
+black = "^23.0.0"
+flake8 = "^6.0.0"
+mypy = "^1.4.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 100
+target-version = ['py39']
+
+[tool.mypy]
+python_version = "3.9"
+warn_return_any = true
+warn_unused_configs = true

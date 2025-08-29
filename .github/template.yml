@@ -1,0 +1,13 @@
+name: Jupyter-Stata Environment
+description: Cross-platform template for Jupyter Lab with Stata kernel and NBGrader support
+topics:
+  - jupyter
+  - stata
+  - education
+  - nbgrader
+  - data-science
+  - econometrics
+  - statistics
+  - teaching
+  - python
+  - template
